@@ -1,4 +1,4 @@
-# Name
+[![Logo of libaco](https://github.com/libaco/logo/blob/main/web/libaco_logo_blue.svg)](https://libaco.org)
 
 libaco - A blazing fast and lightweight C asymmetric coroutine library.
 
@@ -28,12 +28,12 @@ Issues and PRs are welcome 🎉🎉🎉
 
 Note: Please use [releases][github-release] instead of the `master` to build the final binary.
 
+Besides this readme, you could also visit the documentation from [https://libaco.org/docs](https://libaco.org/docs). Please follow this readme if there are any differences because the documentation on the website may be lagging behind from this readme.
+
 [github-release]: https://github.com/hnes/libaco/releases
 
 # Table of Contents
 
-   * [Name](#name)
-   * [Table of Contents](#table-of-contents)
    * [Status](#status)
    * [Synopsis](#synopsis)
    * [Description](#description)
@@ -66,6 +66,7 @@ Note: Please use [releases][github-release] instead of the `master` to build the
    * [TODO](#todo)
    * [CHANGES](#changes)
    * [Donation](#donation)
+   * [Thanks](#thanks)
 * [Copyright and License](#copyright-and-license)
 
 # Status
@@ -333,7 +334,7 @@ Be sure that all the co whose share stack is `sstk` is already destroyed when yo
 
 ```c
 typedef void (*aco_cofuncp_t)(void);
-aco_t* aco_create(aco_t* main_co，aco_share_stack_t* share_stack, 
+aco_t* aco_create(aco_t* main_co, aco_share_stack_t* share_stack, 
         size_t save_stack_sz, aco_cofuncp_t co_fp, void* arg);
 ```
 
@@ -993,6 +994,10 @@ I'm a full-time open source developer. Any amount of the donations will be highl
 * Wechat (微信)
 
 ![qr_wechat](img/qr_wechat.png)
+
+# Thanks
+
+The logo of libaco is generously donated by Peter Bech([Peteck](https://github.com/Peteck)). The logo is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). The website of [libaco.org](https://libaco.org) is also kindly contributed by Peter Bech([Peteck](https://github.com/Peteck)).
 
 # Copyright and License
 
